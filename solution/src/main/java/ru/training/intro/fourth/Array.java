@@ -11,12 +11,11 @@ class Array {
     private double[] array;
     private static Random random = new Random();
 
-    Array(int capacity){
+    void setCapacity(int capacity){
         if(capacity>0){
             this.capacity=capacity;
         } else this.capacity=0;
     }
-
     /* Метод иницилизирует массив случайным образом
      * на отрезке [min, max]
      * */
